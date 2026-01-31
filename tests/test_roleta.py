@@ -31,3 +31,4 @@ def test_roleta():
     if resultado_segundo_ultimo_iguais[1] == resultado_segundo_ultimo_iguais[2]:
         pontos += 5
     assert pontos == 5
+    
