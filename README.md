@@ -1,9 +1,14 @@
-#cassino
+Cassino Interativo no Terminal
+Projeto de cassino interativo feito no terminal com o objetivo de aprimorar minhas habilidades em Python.
 
-cassino interativo no terminal, com objetivo de melhorar minhas abiliades em python.
+Objetivos
+- Praticar lógica de programação com jogos simples.
+- Aprender e aplicar testes unitários com pytest.
+- Implementar integração contínua (CI) usando GitHub Actions.
+- Desenvolver sem o uso de frameworks — apenas Python puro.
 
--Estrutura
-    -Varios funçoes de jogos de cassino interativo.
-    -sem frameworks.
-    -como testes unitarios utilizando pytest.
-    -e ci(integração continua) com o github actions.
+Estrutura do Projeto
+- Diversas funções simulando jogos de cassino interativo.
+- Interface via terminal.
+- Testes automatizados com pytest.
+- Workflow de CI configurado com GitHub Actions
