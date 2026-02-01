@@ -21,8 +21,9 @@ def roleta(pontuação_total=0):
     else:
         pontos -= 5
         
-    print(f"================[Pontos: {pontos} ]=========================")   
+      
     print(f"Resultado: {' | '.join(resultado)}")
+    print(f"================[Pontos: {pontos} ]=========================") 
     return pontos
 
 
