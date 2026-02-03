@@ -1,21 +1,29 @@
 from src.comprar import pontos_comprar
 import pytest
-
-
+from src.app import codigo_compra
 
 
 def test_comprar_pontos_positivos(monkeypatch):
-    monkeypatch.setattr('builtins.input', lambda _: '20')
+    inputs = iter(['20', 'XYZ123', ''])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    
     pontos = pontos_comprar()
     assert pontos == 20
 
 
 def test_comprar_pontos_zero(monkeypatch):
-    monkeypatch.setattr('builtins.input', lambda _: '0')
+    inputs = iter(['0', 'XYZ123', ''])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    
     pontos = pontos_comprar()
     assert pontos == 0
 
 def test_comprar_pontos_negativos(monkeypatch):
-    monkeypatch.setattr('builtins.input', lambda _: '-10')
+    inputs = iter(['-10', 'XYZ123', ''])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+
+    
     pontos = pontos_comprar()
     assert pontos == 0
