@@ -4,6 +4,7 @@ from comprar import pontos_comprar
 from painel_jogador import painel
 import os
 
+codigo_compra = 'XYZ123'  # Código fixo para a compra de pontos
 pontuação_total = 0
 while True:
     menuOp()

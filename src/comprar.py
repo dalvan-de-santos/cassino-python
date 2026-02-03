@@ -3,6 +3,11 @@ def pontos_comprar():
     try:
         pontos = int(input("Quantos pontos você deseja comprar? "))
         if pontos > 0:
+            codigo = input("Digite o código de compra: ")
+            if codigo != 'XYZ123':
+                print("Código de compra inválido.")
+                input("Pressione Enter para voltar ao menu principal.")
+                return 0
             print(f"Você comprou {pontos} pontos com sucesso!")
             input("Pressione Enter para voltar ao menu principal.")
             return pontos
